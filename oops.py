@@ -555,3 +555,18 @@ b1.display()
     #Block of code(Attributes and methods of parent class)
 # class Child:
     #Block of code(Attributes and methods of child class)
+    
+#Create a parent class Employee and attributes are emp name and salary.
+#Create a child class Developer and attributes are prog lang and project.
+#Diaplay method which will print whole detail emp name salary lang and project.
+
+class Employee:
+    emp_name = "Shaurya"
+    salary = '100000'
+class Developer(Employee):
+    prog_lang = "Python"
+    project = "ISL"
+    def display(self):
+        print(self.emp_name, self.salary, self.prog_lang, self.project)
+shau = Developer()
+shau.display()
