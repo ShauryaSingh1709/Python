@@ -733,3 +733,29 @@ shau.display()
 #         .
 #         .
 #It is the phenomenon of deriving the properties and attributes and methods from a single parent class into multiple child class.
+#Create a parent class Vehicle with attributes v_name and v_number.
+#Create two child class Car and Bike.
+#Create an object method for car and bike where in car class declare fuel type as an attribute inside that print v_name and number and fuel type.
+#Create an object method for bike class where in bike class declare fuel type as an attribute inside that print v_name and number and fuel type.
+
+class Vehicle:
+    v_name = "BMW"
+    v_number = "ABC123"
+class Car(Vehicle):
+    fuel = "Disel"
+    def display(self):
+        print(self.v_name, self.v_number, self.fuel)
+class Bike(Vehicle):
+    fuel = "Petrol"
+    cc = "2000"
+    def show(self):
+        print(self.v_name, self.v_number, self.fuel, self.cc)
+shau = Car() 
+shau1 = Bike()
+shau.display()
+shau1.show()
+
+
+
+#HYBRID INHERITANCE:-
+#Combination of more than one type of inheritance is called as hybrid inheritance.

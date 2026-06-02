@@ -687,9 +687,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 56.764830651825974,
-			"y": -226.2192066954993,
-			"z": 0.7883898544065573,
+			"x": 6479.463725223564,
+			"y": -2206.4005501126903,
+			"z": 0.07255839177981503,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -1269,9 +1269,7 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:pLkBTsUJn6fDlV__nc4e1"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -3261,7 +3259,7 @@
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "grabbing",
+				"type": "cross",
 				"rotation": 0
 			},
 			"isFocusMode": false,
