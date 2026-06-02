@@ -474,3 +474,31 @@ Demo.add(10,20)
 #Because it does not use class members.
 #Because it works independently.
 #--Static method is a normal helper function inside a class--
+
+
+
+#Pillars Of OOPS:- 
+#1. Inheritance
+#2. Encapsulation
+#3. Polymorphism
+#4. Abstraction
+
+class A:
+    def __init__(self):
+        print("Hi")
+    def __init__(self):
+        print("Hello")
+a = A()
+#Output will be Hello
+
+class B:
+    def display(self):
+        print("Hi")
+    def display(self, a):
+        print(a)
+b = B()
+b.display(10)
+
+
+
+#Inheritance
