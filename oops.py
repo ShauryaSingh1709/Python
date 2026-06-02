@@ -501,4 +501,30 @@ b.display(10)
 
 
 
-#Inheritance
+#Inheritance :- It is a process of inheriting or invoking the properties or attributes of parent class into child class.
+#Syntax for inheritance :-
+#class name(Parent class):
+    #attribute and method of parent class.
+#class name1(childclass):
+
+#Code:- 
+class Animal:      #Parent class or Super class or base class
+    a = "Snake"    
+    b = "Rabbit"
+class Birds(Animal): #Child class or Derived class
+    c = "kiwi"
+    d = "Peacock"
+b1 = Birds()
+print(b1.a, b1.b, b1.c, b1.d)
+
+#Create one inheritance class name will be A (Parent class) and child class will be B. In class A there is a show method which print hello in class B there is a method name display which print hello world.
+class A:      
+    def show(self):   
+        print("Hello")
+class B(A): 
+    def display(self):
+        print("Hello World")
+b1 = B()
+b1.show()
+b1.display()
+    
