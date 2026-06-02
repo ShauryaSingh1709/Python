@@ -570,3 +570,71 @@ class Developer(Employee):
         print(self.emp_name, self.salary, self.prog_lang, self.project)
 shau = Developer()
 shau.display()
+
+#MULTI LEVEL INHERITANCE:-
+#Flow Dig:-
+#class A: # Parent class
+#         .
+#         .
+#         .
+#         .
+#         .
+#         .
+#class B(A) #Child class but Parent class for class C
+#         .
+#         .
+#         .
+#         .
+#         .
+#         .
+#class C(B) #Child class but Parent class for class D
+#         .
+#         .
+#         .
+#         .
+#         .
+#         .
+#class D(C) #Child class 
+#         .
+#         .
+#         .
+#         .
+#         .
+#         .
+#It is a phenomenon or driving property from parent class or from one class to another class by considering more than one level.
+#In this case the last derived class will having all the properties from its parent class.
+#It can easily access all the attributes of all the parent class.
+#Syntax for multi level inheritance :-
+# class C1:
+    #Block of code(Attributes and methods of class C1)
+# class C2(C1):
+    #Block of code(Attributes and methods of class C2)
+# class C3(C2):
+    #Block of code(Attributes and methods of class C3)
+#         .
+#         .
+#         .
+#         .
+#         .
+#         .
+#       n number of classes
+
+#Create a class Bank wuth attribute branch name , manager name and constructor have all these two attributes
+#Create a class ATM(Bank) having constructor with having print branch name , manager name , acc no., IFSC code.
+#Create a class ATM2(ATM) having constructor with having print acc no, IFSC code , branch name and manager name.
+
+class Bank:
+    def __init__(self):
+        self.branch_name = "GORAKHPUR"
+        self.manager_name = "Shaurya"
+        
+class ATM(Bank):
+    def __init__(self):
+        super().__init__()
+        self.acc_no = "1234567890"
+        self.IFSC_code = "HDFC0001234"
+class ATM2(ATM):
+    def __init__(self):
+        super().__init__()
+        print(self.acc_no, self.IFSC_code, self.branch_name, self.manager_name)
+a = ATM2()
