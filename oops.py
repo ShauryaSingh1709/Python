@@ -648,3 +648,88 @@ a = ATM2()
 #It is the process of calling or invoking parent class method inside the child class method.
 #The syntax for method chaining is :- super().method_name(args)
 #Another syntax for method chaining is :- class_name.method_name(args)  #class name is parent class name here.
+
+#Create a multilevel inheritance class A (Parent class) and class B (Child class) and class C (Child class of class B).
+#All have method with same name show.
+#Print hello in first then world in second and then hello world in third class by using method chaining.
+class A:
+    def show(self):
+        print("Hello")
+class B(A):
+    def show(self):
+        super().show()
+        print("World")
+class C(B):
+    def show(self):
+        super().show()
+        print("Hello World")
+a = C()
+a.show()
+
+
+class A:
+    def show(self):
+        print("Hello")
+class B(A):
+    def show(self):
+        A.show(self)
+        print("World")
+class C(B):
+    def show(self):
+        B.show(self)
+        print("Hello World")
+a = C()
+a.show()
+
+#MULTIPLE INHERITANCE:- 
+#It is a phenomenon of deriving the properties from multiple parent class into a single child class.
+#Flow dig:-
+#class A: #Parent class 1
+#         .
+#         .
+#         .
+#class B: #Parent class 2
+#         .
+#         .
+#         .
+#class C(B, A): #Child class
+#Syntax for multiple inheritance :-
+# class C1:
+    #Block of code(Attributes and methods of class C1)
+# class C2:
+    #Block of code(Attributes and methods of class C2)
+# class C3(C1, C2):     
+    #Block of code(Attributes and methods of class C3)
+
+#Create two parent class A with method show that prints Hello from A
+#class B with method display that prints Hello from B
+#Create a child class C that inherit A and B.
+
+class A:
+    def show(self):
+        print("Hello from A")
+class B:
+    def display(self):
+        print("Hello from B")
+class C(A, B):
+    pass
+shau = C()
+shau.show()
+shau.display()
+
+
+#HIERARCHAL INHERITANCE:-
+#Syntax:- 
+#class A: #Parent class
+#         .
+#         .
+#         .
+#class B(A): #Child class 1
+#         .
+#         .
+#         .
+#class C(A): #Child class 2
+#         .
+#         .
+#         .
+#It is the phenomenon of deriving the properties and attributes and methods from a single parent class into multiple child class.
