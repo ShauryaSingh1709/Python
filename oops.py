@@ -517,7 +517,8 @@ class Birds(Animal): #Child class or Derived class
 b1 = Birds()
 print(b1.a, b1.b, b1.c, b1.d)
 
-#Create one inheritance class name will be A (Parent class) and child class will be B. In class A there is a show method which print hello in class B there is a method name display which print hello world.
+#Create one inheritance class name will be A (Parent class) and child class will be B. 
+#In class A there is a show method which print hello in class B there is a method name display which print hello world.
 class A:      
     def show(self):   
         print("Hello")
@@ -527,4 +528,30 @@ class B(A):
 b1 = B()
 b1.show()
 b1.display()
-    
+#if func is return rather than print then we have to use print then call else just do like previous one.
+
+#Types of Inheritance:- 
+#1. Single level Inheritance
+#2. Multi level Inheritance
+#3. Multiple Inheritance
+#4. Hierarichal Inheritance
+#5. Hybrid Inheritance
+
+#SINGLE LEVEL INHERITANCE:- 
+#Flow Dig:-
+#class A: #Parent class
+#         .
+#         .
+#         .
+#         .
+#         .
+#         .
+#class B(A) #Child class
+
+#In single level inheritance there aways one parent class and one child class is present.
+#In single level inheritance the one child class can able to inherit all the properties , attributes and methods of the parent class.
+#Syntax for single level inheritance :-
+# class Parent:
+    #Block of code(Attributes and methods of parent class)
+# class Child:
+    #Block of code(Attributes and methods of child class)
