@@ -638,3 +638,13 @@ class ATM2(ATM):
         super().__init__()
         print(self.acc_no, self.IFSC_code, self.branch_name, self.manager_name)
 a = ATM2()
+
+#Constructor Chaining:-
+#It is a process of calling or invoking the parent class constructor inside child class constructor.
+#In constructor chaining we have to follow the syntax :- super().__init__(args)
+#We can call the constructor or chain with class name also eg:- class_name__init__(args)
+
+#Method Chaining:-
+#It is the process of calling or invoking parent class method inside the child class method.
+#The syntax for method chaining is :- super().method_name(args)
+#Another syntax for method chaining is :- class_name.method_name(args)  #class name is parent class name here.
