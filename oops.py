@@ -813,6 +813,8 @@ obj + obj1
 
 
 #METHOD OVERRIDING:-
+#1. When we use same func name for two or more operation then the first func address will get override by the address of next func.
+#If you want to access a particular method we have to make use of monkey patching concept.
 class A:
     def display(self):
         print("a python")
@@ -838,3 +840,50 @@ obj.display()
 obj.a()
 obj.b()
 obj.c()
+#Moneky patching is storing previous method address to a variable and accessing that method using the variable, previous code is example of moneky patching.
+
+#METHOD OVERLOADING:-
+#It is the process of using same method name to perform two or more different operation.
+#In python we are going to perform method overloading it will act as a method overriding but in python we can achieve 
+#method overloading with the help of default parameter.
+#Example:- 
+class A:
+    def show(self, a):
+        print(self.a)
+    def show(self, a, b):
+        print(self.a + self.b)
+    def show(self, a, b, c):
+        print(self.a + self.b + self.c)
+obj = A()
+obj.show(10,20)
+
+#Example:- 
+class A:
+    def display(self, *a):
+        print(sum(a))
+obj = A()
+obj.display(10)
+obj.display(10,20)
+obj.display(10,100,144,66,78)
+
+
+#ENCAPSULATION:-
+#It is the concept of oops that means wrapping the data , attributes , variables, methods inside a function or a class
+#That operator on that data into a single unit.
+#And restricting the direct access to the components.
+#Encaapsulation means it is the process of hiding the details of an object and allowing the access only through control methods.
+#It is the combination of data hiding and abstraction.
+
+#How to achieve encapsulation by access specifier :-
+#1. Public Access Specifier
+#2. Private Access Specifier(__ :- double underscore used for private access specifier)
+#3. Protected Access Specifier(_ :- single underscore used for protected access specifier)
+#By default all the attributes are public access specifiers.
+
+#Public Access Specifier:-
+class A:
+    a = "Shaurya"
+    def show(self):
+        print(self.a)
+obj = A()
+print(obj.a)
