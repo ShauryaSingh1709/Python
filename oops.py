@@ -782,3 +782,59 @@ class A:
 obj = A(10)
 obj1 = A(20)
 print(obj + obj1) #Output :- 30
+
+
+#Second Example:- 
+class Number:
+    def __init__(self, value):
+        self.value = value
+    def __add__(self, shaurya, alavya, aman, vashu):
+        return self.value + shaurya.value + alavya.value + aman.value + vashu.value
+num1 = Number(10)
+num2 = Number(20)
+num3 = Number(30)
+num4 = Number(40)
+num5 = Number(50)
+print(num1.__add__(num2, num3, num4, num5)) #Output :- 150
+
+
+#Example Third:- 
+class A:
+    def __init__ (self,a):
+        self.a = a
+    def __add__(self, others):
+        print(self.a + others.a)
+        print(self.a - others.a)
+        print(self.a * others.a)
+        print(self.a / others.a)
+obj = A(10)
+obj1 = A(20)
+obj + obj1
+
+
+#METHOD OVERRIDING:-
+class A:
+    def display(self):
+        print("a python")
+    def display(self):
+        print("Hello")
+    def display(self):
+        print("TATA")
+obj = A()
+obj.display() #Output :- TATA
+#If I need to print Hello only rather than TATA and a python then we use mokey patching :-
+class A:
+    def display(self):
+        print("a python")
+    a = display
+    def display(self):
+        print("Hello")
+    b = display
+    def display(self):
+        print("TATA")
+    c = display
+obj = A()
+obj.display()
+obj.a()
+obj.b()
+obj.c()
