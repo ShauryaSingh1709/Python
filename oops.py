@@ -930,7 +930,7 @@ class A:
 class B(A):
     def show(self):
         print(self.__salary)
-        print(self.__comapny)
+        print(self.__company)
 shau = B()
 print(shau.__salary)
 #Output :- ERROR!
