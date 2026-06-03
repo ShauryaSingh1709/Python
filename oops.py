@@ -881,6 +881,10 @@ obj.display(10,100,144,66,78)
 #By default all the attributes are public access specifiers.
 
 #Public Access Specifier:-
+#Public members can be accessed outside the class and also in derived class.
+#The normal members that we are created in a normal class act as public members.
+#There is no need of underscore for any kind of initialization for public access specifier.
+#Example for public access specifier :-
 class A:
     a = "Shaurya"
     def show(self):
