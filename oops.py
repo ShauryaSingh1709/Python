@@ -900,3 +900,20 @@ class B(A):
 shau = B()
 print(shau.a)
 
+#Protected Access Specifier:-
+
+
+
+
+#Example:-
+class A:
+    def __init__(self):
+        self._name = "Shaurya"
+        self._salary = 10000000000
+class B(A):
+    def show(self):
+        print(self._name)
+        print(self._salary)
+shh = B()
+print(shh._name)
+print(shh._salary)
