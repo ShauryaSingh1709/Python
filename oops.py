@@ -919,6 +919,10 @@ print(shh._salary)
 
 
 #Private Access Specifier:- 
+#These are the members of the class which will provide security to the members present inside the class.
+#To make private members it is compoulsory to make use of double underscore (__).
+#Private members can not be accessed in the derived class but we can still access by using Name Mangling.
+
 #Example:-
 class A:
     __salary = 50000000000000000000000000000000
