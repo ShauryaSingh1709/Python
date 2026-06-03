@@ -887,3 +887,12 @@ class A:
         print(self.a)
 obj = A()
 print(obj.a)
+
+#Make a parent class A put some attributes then make a child class B try to access class A properties inside the child class
+class A:
+    a = "Shaurya"
+class B(A):
+    pass
+shau = B()
+print(shau.a)
+
