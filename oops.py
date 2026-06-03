@@ -901,10 +901,9 @@ shau = B()
 print(shau.a)
 
 #Protected Access Specifier:-
-
-
-
-
+#In protected access specifier variables or methods that is intended to be access within the class and its child class.
+#In python protected members are represented by single underscore.
+#We have to mention single underscore before the attributes name or the methods name.
 #Example:-
 class A:
     def __init__(self):
