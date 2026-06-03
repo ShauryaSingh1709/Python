@@ -916,3 +916,47 @@ class B(A):
 shh = B()
 print(shh._name)
 print(shh._salary)
+
+
+#Private Access Specifier:- 
+#Example:-
+class A:
+    __salary = 50000000000000000000000000000000
+    __company = "Google"
+class B(A):
+    def show(self):
+        print(self.__salary)
+        print(self.__comapny)
+shau = B()
+print(shau.__salary)
+#Output :- ERROR!
+# Traceback (most recent call last):
+#   File "<main.py>", line 9, in <module>
+# AttributeError: 'B' object has no attribute '__salary'. Did you mean: '_A__salary'?
+
+# === Code Exited With Errors ===
+
+class A:
+    __salary = 50000000000000000000000000000000
+    __company = "Google"
+class B(A):
+    def show(self):
+        print(self.__salary)
+        print(self.__comapny)
+shau = B()
+print(shau._A__salary)
+#Output :- 50000000000000000000000000000000
+#Syntax for accessing :- 
+#obj_name._class_name__attribute/Methods
+#This syntax is called Name Mangling.
+
+#Example for accessing method:- 
+class A:
+    __salary = 50000000000000000000000000000000
+    __company = "Google"
+class B(A):
+    def __show(self):
+        print("Hello")
+shau = B()
+shau._B__show()
+print(shau._A__salary)
