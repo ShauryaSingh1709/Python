@@ -767,3 +767,18 @@ shau1.show()
 #Poly = Many and Morph = Forms
 #It is the phenomenon of making the same operator or method to perform two or more oprations.
 #Addition operator is example of polymorphism because it can perform addition of two numbers as well as concatenation of two strings.
+#How to achieve polymorphism in python :-
+#1. Operator Overloading
+#2. Method Overloading
+#3. Method Overriding
+
+#OPERATOR OVERLOADING:-
+#Example:- 
+class A:
+    def __init__ (self,a):
+        self.a = a
+    def __add__(self, others):
+        return self.a + others.a
+obj = A(10)
+obj1 = A(20)
+print(obj + obj1) #Output :- 30
