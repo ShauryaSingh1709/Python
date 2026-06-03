@@ -759,3 +759,11 @@ shau1.show()
 
 #HYBRID INHERITANCE:-
 #Combination of more than one type of inheritance is called as hybrid inheritance.
+
+
+
+
+#Polymorphism:-
+#Poly = Many and Morph = Forms
+#It is the phenomenon of making the same operator or method to perform two or more oprations.
+#Addition operator is example of polymorphism because it can perform addition of two numbers as well as concatenation of two strings.
