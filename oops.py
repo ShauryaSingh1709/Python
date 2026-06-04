@@ -1073,3 +1073,56 @@ shau.area()
 
 shau1 = Square()
 shau1.area()
+
+
+#Create a abstract class Employee
+#Create a abstract method salary(), emp_id(), project()
+#Create a child class manager, developer, tester
+#Implement salary, emp_id, project inside Manager , developer , tester.
+
+from abc import ABC , abstractmethod
+class Employee:
+    @abstractmethod
+    def salary(self):
+        pass
+    @abstractmethod
+    def emp_id(self):
+        pass
+    @abstractmethod
+    def project(self):
+        pass
+class Manager(Employee):
+    def salary(self):
+        print("Salary is 1 lakhs")
+    def emp_id(self):
+        print("Emp_id is 1")
+    def project(self):
+        print("Project is XYZ")
+class Developer(Employee):
+    def salary(self):
+        print("Salary is 50k")
+    def emp_id(self):
+        print("Emp_id is 2")
+    def project(self):
+        print("Project is okok")
+class Tester(Employee):
+    def salary(self):
+        print("Salary is 10k")
+    def emp_id(self):
+        print("Emp_id is 3")
+    def project(self):
+        print("Project is Testing")
+shaurya = Manager()
+shaurya.salary()
+shaurya.emp_id()
+shaurya.project()
+
+shaurya1 = Developer()
+shaurya1.salary()
+shaurya1.emp_id()
+shaurya1.project()
+
+shaurya2 = Tester()
+shaurya2.salary()
+shaurya2.emp_id()
+shaurya2.project()
