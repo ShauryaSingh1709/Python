@@ -974,6 +974,22 @@ print(shau._A__salary)
 #Abstract Method
 #Concrete CLass
 
+
+
+
+
+#ABSTRACT METHOD:- 
+#It is the method which consist of function declaration but not function implementation.
+#To make abstract method we have to use decorator @abstractmethod.
+#Syntax:- 
+#@abstractmethod
+#def func_name(self):
+#    pass
+
+
+
+
+
 #Example:-
 from abc import ABC, abstractmethod
 class Vehicle(ABC):
@@ -1020,3 +1036,4 @@ obj.engine()
 #         print("Pay using Crypto")
 # a = Crypto()
 # a.otp()
+
