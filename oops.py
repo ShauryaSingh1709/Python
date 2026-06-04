@@ -847,24 +847,24 @@ obj.c()
 #In python we are going to perform method overloading it will act as a method overriding but in python we can achieve 
 #method overloading with the help of default parameter.
 #Example:- 
-class A:
-    def show(self, a):
-        print(self.a)
-    def show(self, a, b):
-        print(self.a + self.b)
-    def show(self, a, b, c):
-        print(self.a + self.b + self.c)
-obj = A()
-obj.show(10,20)
+# class A:
+#     def show(self, a):
+#         print(self.a)
+#     def show(self, a, b):
+#         print(self.a + self.b)
+#     def show(self, a, b, c):
+#         print(self.a + self.b + self.c)
+# obj = A()
+# obj.show(10,20)
 
-#Example:- 
-class A:
-    def display(self, *a):
-        print(sum(a))
-obj = A()
-obj.display(10)
-obj.display(10,20)
-obj.display(10,100,144,66,78)
+# #Example:- 
+# class A:
+#     def display(self, *a):
+#         print(sum(a))
+# obj = A()
+# obj.display(10)
+# obj.display(10,20)
+# obj.display(10,100,144,66,78)
 
 
 #ENCAPSULATION:-
@@ -924,15 +924,15 @@ print(shh._salary)
 #Private members can not be accessed in the derived class but we can still access by using Name Mangling.
 
 #Example:-
-class A:
-    __salary = 50000000000000000000000000000000
-    __company = "Google"
-class B(A):
-    def show(self):
-        print(self.__salary)
-        print(self.__company)
-shau = B()
-print(shau.__salary)
+# class A:
+#     __salary = 50000000000000000000000000000000
+#     __company = "Google"
+# class B(A):
+#     def show(self):
+#         print(self.__salary)
+#         print(self.__company)
+# shau = B()
+# print(shau.__salary)
 #Output :- ERROR!
 # Traceback (most recent call last):
 #   File "<main.py>", line 9, in <module>
@@ -966,3 +966,54 @@ shau._B__show()
 print(shau._A__salary)
 
 #Abstraction :- 
+#1. 
+#Abstract Class
+#Abstract Method
+#Concrete CLass
+
+#Example:-
+from abc import ABC, abstractmethod
+class Vehicle(ABC):
+    @abstractmethod
+    def engine(self):
+        pass
+class Car(Vehicle):
+    def engine(self):
+        print("Start the engine")
+obj = Car()
+obj.engine()
+
+#Second thing if we write fuel instead of engine:-
+# from abc import ABC, abstractmethod
+# class Vehicle(ABC):
+#     @abstractmethod
+#     def engine(self):
+#         pass
+# class Car(Vehicle):
+#     def fuel(self):
+#         print("Start the engine")
+# obj = Car()
+# obj.engine()
+# #Error :- Traceback (most recent call last):
+#   File "c:\Users\hp\OneDrive\Desktop\PYTHON\oops.py", line 994, in <module>
+#     obj = Car()
+# TypeError: Can't instantiate abstract class Car with abstract method engine
+
+
+#Example second:-
+# from abc import ABC, abstractmethod
+# class Payment(ABC):
+#     @abstractmethod
+#     def pay(self):
+#         pass
+# class UPI(Payment):
+#     def pay(self):
+#         print("Pay using UPI")
+# class CreditCard(Payment):
+#     def pay(self):
+#         print("Pay using Credit Card")
+# class Crypto(Payment):
+#     def otp(self):
+#         print("Pay using Crypto")
+# a = Crypto()
+# a.otp()
