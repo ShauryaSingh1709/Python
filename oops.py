@@ -964,3 +964,5 @@ class B(A):
 shau = B()
 shau._B__show()
 print(shau._A__salary)
+
+#Abstraction :- 
