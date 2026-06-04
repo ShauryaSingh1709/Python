@@ -1,4 +1,5 @@
 #MAP()
+#It is a function which is used to perform same set of opertion for each and every value present inside the collection.
 #Syntax:- 
 #map(collection, function)
 #Example
