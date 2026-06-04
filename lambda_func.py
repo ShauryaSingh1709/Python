@@ -22,3 +22,35 @@ print(a(10,20,30))
 #WAP to subtract three numbers using lambda function.
 a = lambda a,b,c: a-b-c
 print(a(10,20,30))
+#Another way:-
+print((lambda a,b,c: a-b-c)(10,20,30))
+
+#WAP to check whether the number is greater or not using lambda function and if number is greater print "HYE" else print "BYE".
+a = lambda a,b: "HYE" if a > b else "BYE"
+print(a(40,20))
+
+#Second way :-
+print((lambda a,b: "HYE" if a > b  else "BYE")(10,20))
+
+
+#WAP to print cube if value is odd or else square of that number
+
+a = lambda a: "cube" if a % 2 != 0 else a*a
+print(a(5))
+
+#WAP to find the greatest number among three number
+a = lambda a,b,c: "A is greater" if a > b and a > c else "B is greater" if b > a and b > c else "C is greater"
+print(a(10,20,30))
+
+#WAP to check number is negative positive or zero
+a = lambda a: "Number is positive" if a > 0 else "Number is Negative" if a < 0 else "Number is zero"
+print(a(0))
+
+#WAP to calcuate area of rectangle
+a = lambda l,b: l*b
+print(a(10,20))
+
+
+#WAP to calculate the simple intrest
+a = lambda a,b,c: (a*b*c)/100
+print(a(10,200,300))
