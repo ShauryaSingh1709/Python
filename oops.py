@@ -1126,3 +1126,4 @@ shaurya2 = Tester()
 shaurya2.salary()
 shaurya2.emp_id()
 shaurya2.project()
+
