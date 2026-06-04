@@ -14,3 +14,7 @@ print((lambda a: a**2)(10))
 #With two argument
 a = lambda a,b: a*b
 print(a(10,20))
+
+#Example:-
+a = lambda a,b,c: a+b+c
+print(a(10,20,30))
