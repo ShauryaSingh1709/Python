@@ -966,7 +966,10 @@ shau._B__show()
 print(shau._A__salary)
 
 #Abstraction :- 
-#1. 
+#1. It is the process of hiding the implementation details and showing the essential features of an object to the user.
+#We will try to hide the actual implementation and only provide the features.
+#To achieve abstraction we have to make an abstract class for that we have to import abc module like this:- from abc import ABC, abstractmethod.
+#There are three main component of abstraction:-
 #Abstract Class
 #Abstract Method
 #Concrete CLass
