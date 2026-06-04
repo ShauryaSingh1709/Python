@@ -988,7 +988,19 @@ print(shau._A__salary)
 
 
 
+#ABSTRACT CLASS:-
+#It is the class in which we are trying to inherit abc, and it also consist of atleast one abstract method.
+#It is not possible to create an object using abstract class.
+#Syntax:- 
+#from abc import ABC, abstractmethod
+#class <ClassName>(ABC):
+#     Attributes and methods
 
+
+
+#Concrete Class:-
+#It is the class which doesn't consist of any abstract method, we can call it as concrete class.
+#It is possible to create an object using concrete class or for the concrete class.
 
 #Example:-
 from abc import ABC, abstractmethod
@@ -1037,3 +1049,27 @@ obj.engine()
 # a = Crypto()
 # a.otp()
 
+#Ques1:- Create an abstract class shape with an abstract method area.
+#Create a child class: Rectangle , square.
+#Implement the area method in Rectangle and square.
+from abc import ABC, abstractmethod
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+class Rectangle(Shape):
+    def area(self):
+        l = 10
+        b = 20
+        a = l * b 
+        print("Area of Rectangle:-", a)
+class Square(Shape):
+    def area(self):
+        a = 10
+        b = a*a 
+        print("Area of Square:-", b)
+shau = Rectangle()
+shau.area()
+
+shau1 = Square()
+shau1.area()
