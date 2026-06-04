@@ -18,3 +18,7 @@ print(a(10,20))
 #Example:-
 a = lambda a,b,c: a+b+c
 print(a(10,20,30))
+
+#WAP to subtract three numbers using lambda function.
+a = lambda a,b,c: a-b-c
+print(a(10,20,30))
