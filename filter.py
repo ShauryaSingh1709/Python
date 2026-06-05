@@ -1,3 +1,10 @@
+#Filter()
+#1. It is a function which is used to get only the required data from the collection.
+#2. In this case this function which we are using should return either true or false.
+#3. In filter function if condition is satisfied it hold the value or else remove from the collection.
+
+
+
 #Filter all the odd number
 a = [2,4,3,5,6,7,8]
 b = filter(lambda x: x%2 != 0, a)
