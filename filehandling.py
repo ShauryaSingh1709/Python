@@ -68,9 +68,25 @@ f = open('sample.txt', 'r')
 print(f.readlines()) #Output:- ['Hello This is Shaurya\n', '1.Python\n', '2.GO lang']
 f.close()
 
-#3. Append():- 
+#3. Append():- Append mode is almost similar to write mode but if file is already exist then controller will add a new data to the exisiting file without performing overriding.
+# In append we have two types of function:-
+#a. write()
+#b. writeline()
 
 #Syntax :- var = open('path/fname', 'a')
 f = open('sample.txt', 'a')
 f.write("\nHello new here")
+f.close()
+
+
+#tell():- 
+f = open('sample.txt', 'a')
+print(f.tell())
+f.close()
+
+#seek():-
+f = open('sample.txt', 'a')
+print(f.tell()) #Output:- 58
+f.seek(5) #We set it to 5
+print(f.tell()) #Output:- 5
 f.close()
