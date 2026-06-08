@@ -64,3 +64,6 @@ print(f.readline()) #This will print full first line.
 f.close()
 
 
+f = open('sample.txt', 'r')
+print(f.readlines()) #Output:- ['Hello This is Shaurya\n', '1.Python\n', '2.GO lang']
+f.close()
