@@ -6,11 +6,21 @@
 #5. In python open() function is used to get the accessibility of a file before that we have to follow the syntax.
 #Syntax:-  
 #var_name = open('path/filename', 'mode')   #Syntax 1
-#open('path/fname', mode) as var #synatx 2
+#with open('path/fname', 'mode') as var #synatx 2
 #6. In the mode of operation writing the data into the file or reading from the file for that we have to use modes.
-#1:- Write() :- Write mode has two mode 
+#7. Mode of operation classified into three types:- 
+#a. write()
+#b. read()
+#c. append()
+
+
+#1:- Write() :- Write mode is used to write the content into the file.
+#If file is not present then write mode will create the file.
+#If file exist then content will override.
+# Write mode has two function
 #a. write()
 #b. writeline() 
+#c. w+
 #Syntax for writeline() :-
 # f.writeline([iterable of collection])
 f = open('sample.txt', 'w')
@@ -25,3 +35,32 @@ f.write('2.Bestf is only my Bestf\n')
 f.write('3.Bestf is only my Bestf\n')
 f.write('4.Bestf is only my Bestf\n')
 f.close()
+
+
+#2:- Read() :- It is used to read the data from the file.
+#In this case if file is not exist then controller wil throw error.
+#In read mode we have three types of operations :-
+#a. read()
+#b. readline()
+#c. readlines()
+f = open('sample.txt', 'r')
+print(f.read()) #This will give full file
+f.close()
+
+f = open('sample.txt', 'r')
+print(f.read(10)) #This will print first 10 char ex:- Hello This
+f.close()
+
+f = open('sample.txt', 'r')
+print(f.read(10)) #This will print first 10 char ex:- Hello This
+print(f.read(10)) #This will print next 10 char from Hello This , ex:-  is Shaury
+f.close()
+
+
+f = open('sample.txt', 'r')
+print(f.read(10)) #This will print first 10 char ex:- Hello This
+print(f.read(10)) #This will print next 10 char from Hello This , ex:-  is Shaury
+print(f.readline()) #This will print full first line.
+f.close()
+
+
