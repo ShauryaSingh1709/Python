@@ -67,3 +67,10 @@ f.close()
 f = open('sample.txt', 'r')
 print(f.readlines()) #Output:- ['Hello This is Shaurya\n', '1.Python\n', '2.GO lang']
 f.close()
+
+#3. Append():- 
+
+#Syntax :- var = open('path/fname', 'a')
+f = open('sample.txt', 'a')
+f.write("\nHello new here")
+f.close()
