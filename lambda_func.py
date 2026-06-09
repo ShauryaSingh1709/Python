@@ -54,3 +54,7 @@ print(a(10,20))
 #WAP to calculate the simple intrest
 a = lambda a,b,c: (a*b*c)/100
 print(a(10,200,300))
+
+
+a = lambda a: a**3
+print(a(10))
