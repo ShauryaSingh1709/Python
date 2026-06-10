@@ -73,3 +73,31 @@ except:
 
 #Custom Exception Handling:- 
 #Syntax:- raise <exception> ("message")
+
+#User defined exception handling:-
+#Syntax:- 
+#class Error_name(Exception):
+#   pass
+#raise Error_name("message")
+class AgeError(Exception):
+    pass
+try:
+    age = int(input('Enter the age '))
+    if age < 18:
+        raise AgeError('Not eligible')
+    else:
+        print('Eligible')
+except AgeError as E:
+    print(E)
+    
+    
+#finally:-
+#Syntax:-
+# try:
+#     S.B
+# except:
+#     S.B
+# except:
+#     S.B
+# finally: #finally will always execute.
+#     S.B  
