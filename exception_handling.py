@@ -57,3 +57,15 @@ try:
     print(a/b)
 except Exception:
     print("Sorry Error Occured")
+    
+    
+#DEFAULT EXCEPTION HANDLING:-
+
+# while True:
+#     print("hi") #This will go infinity and infinity and when we will stop then it will give keyboard interrupt error.
+    
+try:
+    while True:
+        print("Hi")
+except:
+    print("Sorry Error Occured") #This will avoid keyboard interrupt error.
