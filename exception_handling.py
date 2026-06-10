@@ -21,4 +21,17 @@ except ValueError:
 #3. Default Exception Handling
 # Default exception Handling have two parts:-
 #a. Custom Exception Handling.
-#b. User defined Exception Handling
+#b. User defined Exception Handling.
+
+
+#SPECIFIC EXCEPTION HANDLING:- When we know the type of error we gonna face then we use specific exception handling.
+#Example:-
+try:
+    a = int(input("Enter a value "))
+    b = int(input("Enter another value "))
+    print(a/b)
+except ZeroDivisionError:
+    print("Error hai bhai 0 pass nhi kro") 
+except ValueError:
+    print("Pass number bro not alphabetic value")
+    
