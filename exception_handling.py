@@ -14,3 +14,11 @@ except ZeroDivisionError:
     print("Error hai bhai 0 pass nhi kro") #This will give output as Error hai bhai 0 pass nhi kro
 except ValueError:
     print("Pass number bro not alphabetic value") #If we will give input as a b c or anything rather than number than we need this too.
+    
+#Exception Handling consist of three types:-
+#1. Specific Exception Handling
+#2. Generic Exception Handling
+#3. Default Exception Handling
+# Default exception Handling have two parts:-
+#a. Custom Exception Handling.
+#b. User defined Exception Handling
