@@ -35,3 +35,25 @@ except ZeroDivisionError:
 except ValueError:
     print("Pass number bro not alphabetic value")
     
+#Create a specific exception handling where we have to handle zerodivision error , value error and key error.
+try:
+    a = int(input("Enter a value "))
+    b = int(input("Enter another value "))
+    print(a/b)
+    c = {"a":1, "b":2, "c":3}
+    print(c["d"])
+except ZeroDivisionError:
+    print("Error hai bhai 0 pass nhi kro") 
+except ValueError:
+    print("Pass number bro not alphabetic value")
+except KeyError:
+    print("Key Error")
+
+
+#GENERIC EXCEPTION HANDLING:- 
+try:
+    a = int(input("Enter a value "))
+    b = int(input("Enter another value "))
+    print(a/b)
+except Exception:
+    print("Sorry Error Occured")
