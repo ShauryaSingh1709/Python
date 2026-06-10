@@ -8,14 +8,14 @@ print(next(it))
 print(next(it))
 print(next(it))
 print(next(it))
-# print(next(it)) #This will give error bcoz list is exhausted stopiteration error.
+# print(next(it)) #This will give error bcoz list is exhausted StopIteration error.
 print(it) #give address.
 
 #Iter() method :- It is a function which is used to make the control to get pointed to the initial node address.
 #Syntax for iter() is :- var_name = iter(iterable)
 
 #Next() method :- It is a function which is used to get the values one by one.
-#Once you access all the objects inside the iterable it will give stopiteration error.
+#Once you access all the objects inside the iterable it will give StopIteration error.
 #Syntax for next() is :- next(iterator)
 
 class Count:
