@@ -69,3 +69,7 @@ try:
         print("Hi")
 except:
     print("Sorry Error Occured") #This will avoid keyboard interrupt error.
+
+
+#Custom Exception Handling:- 
+#Syntax:- raise <exception> ("message")
