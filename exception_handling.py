@@ -101,3 +101,12 @@ except AgeError as E:
 #     S.B
 # finally: #finally will always execute.
 #     S.B  
+try:
+    a = int(input("Enter a value"))
+    b = int(input("Enter another value"))
+    print(a/b)
+except ZeroDivisionError:
+    print("Error hai bhai 0 pass nhi kro") 
+finally:
+    print("Code executed succesfully")
+    
