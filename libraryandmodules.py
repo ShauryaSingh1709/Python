@@ -46,3 +46,4 @@ print(math.lcm(12,18)) #output :- 36
 print(math.pi) #output :- 3.141592653589793
 print(math.log(100)) #output :- 4.605170185988092
 print(math.log10(100)) #output :- 2.0
+print(math.cos(60)) #output :- 0.8660254037844386
