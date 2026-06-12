@@ -4,7 +4,6 @@ print(a)
 a,b,c,d = 10,20,10,20
 print(a,b,c,d)
 
-
 #Identifer rules
 #1. It should not start with a number
 #2. It should not be an keyword
