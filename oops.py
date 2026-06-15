@@ -1062,12 +1062,12 @@ class Rectangle(Shape):
         l = 10
         b = 20
         a = l * b 
-        print("Area of Rectangle:-", a)
+        print("Area of Rectangle:- ", a)
 class Square(Shape):
     def area(self):
         a = 10
         b = a*a 
-        print("Area of Square:-", b)
+        print("Area of Square:- ", b)
 shau = Rectangle()
 shau.area()
 
