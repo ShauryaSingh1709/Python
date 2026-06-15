@@ -5,7 +5,10 @@
 #         func(*args, **kwargs)
 #         post task
 #     return wrapper
-
+# @<decorator_name>
+# def func_name(*args, **kwargs):
+#     pass
+#func_name()
 
 
 
