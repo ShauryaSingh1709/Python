@@ -104,3 +104,24 @@ shaa = np.array([[1,2,3],
                 [4,5,6]])
 print(shaa.reshape(-1,))
 
+#Creating array with Ones and Zeros
+#For Ones
+#syntax:- np.ones(args)
+a = np.ones(10)
+print(a) #Output will be :- [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+
+#If we want in 2d or 3d then:-
+#Syntax:- np.ones((row, column))
+b = np.ones((2,3))
+print(b) #Output will be :- [[1. 1. 1.]
+       #                  [1. 1. 1.]]
+#For Zeros
+#syntax:- np.zeros(args)
+b = np.zeros(10)
+print(b) #Output will be :- [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+
+#If we want in 2d or 3d then:-
+#Syntax:- np.zeros((row, column))
+b = np.zeros((2,3))
+print(b) #Output will be :- [[0. 0. 0.]
+       #                  [0. 0. 0.]]
