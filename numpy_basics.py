@@ -60,3 +60,8 @@ shau5.dtype
 print(shau5)
 #This is how we can permanently changed the data type of the array.
 
+#arange is a function which is used to create an array of numbers.
+#Syntax :- np.arange(start, stop , step)
+
+shau6 = np.arange(1,10,2) #Here it mean we want array from 1 to 10 but with step of 2
+print(shau6)
