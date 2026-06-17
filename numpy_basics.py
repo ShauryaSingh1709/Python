@@ -89,3 +89,18 @@ print(shau9.shape) #Output will be :- (6,)
 shau10 = np.array([1,2,3,4,5,6])
 print(shau10.reshape(2,3))
 #number of element matters in conversion.
+
+
+
+sh = np.array([1,2,3,4,5,6,7,8])
+print(sh.reshape(8,1))
+
+
+sha = np.array([[1,2,3],
+                [4,5,6]])
+print(sha.reshape(6,))
+#If we have many elements in array and we can't count easily so we can use -1, for reshaping any 2d or 3d into 1d.
+shaa = np.array([[1,2,3],
+                [4,5,6]])
+print(shaa.reshape(-1,))
+
