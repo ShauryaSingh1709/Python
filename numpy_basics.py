@@ -82,3 +82,10 @@ print(shau8.shape) #Output will be :- (2,6)
 
 shau9 = np.array([1,2,3,4,5,6])
 print(shau9.shape) #Output will be :- (6,)
+
+
+#reshape function is used to convert the array dimension to another dimension
+# Syntax:- var_name.reshape(row, column, number of element).
+shau10 = np.array([1,2,3,4,5,6])
+print(shau10.reshape(2,3))
+#number of element matters in conversion.
