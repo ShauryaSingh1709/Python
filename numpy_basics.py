@@ -65,3 +65,10 @@ print(shau5)
 
 shau6 = np.arange(1,10,2) #Here it mean we want array from 1 to 10 but with step of 2
 print(shau6)
+
+#Linspace is a function which divide the equal number of space between the values.
+#Syntax:- np.linspace(1,20,10) #Here 1 is start value , 20 is end value and 10 is number of space.
+shau7 = np.linspace(1,20,10)
+print(shau7)
+# #Output will be :- [ 1.          3.11111111  5.22222222  7.33333333  9.44444444 11.55555556
+#  13.66666667 15.77777778 17.88888889 20.        ]
