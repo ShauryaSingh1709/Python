@@ -66,9 +66,19 @@ print(shau5)
 shau6 = np.arange(1,10,2) #Here it mean we want array from 1 to 10 but with step of 2
 print(shau6)
 
-#Linspace is a function which divide the equal number of space between the values.
+#linspace is a function which divide the equal number of space between the values.
 #Syntax:- np.linspace(1,20,10) #Here 1 is start value , 20 is end value and 10 is number of space.
 shau7 = np.linspace(1,20,10)
 print(shau7)
 # #Output will be :- [ 1.          3.11111111  5.22222222  7.33333333  9.44444444 11.55555556
 #  13.66666667 15.77777778 17.88888889 20.        ]
+
+#shape function is used to describe the shape of the array.
+#Syntax:- var_name.shape
+shau8 = np.array([[1,2,3,4,5,6],
+                  [7,8,9,10,11,12]])
+print(shau8.shape) #Output will be :- (2,6)
+
+
+shau9 = np.array([1,2,3,4,5,6])
+print(shau9.shape) #Output will be :- (6,)
