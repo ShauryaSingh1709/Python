@@ -8,6 +8,7 @@ shau = open('Shaurya.txt', 'r')
 print(shau.read())
 shau.close()
 
+
 #3.	Write a Python program to append new text to an existing file.
 shau = open('Shaurya.txt', 'a')
 shau.write('\nI am Python Developer')
