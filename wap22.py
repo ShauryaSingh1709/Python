@@ -33,6 +33,7 @@ shau1.write(shau.read())
 shau.close()
 shau1.close()
 
+
 #6.	Write a Python program to count the number of vowels, consonants, digits, and special characters in a file.
 with open("Shaurya.txt", "r") as file:
     content = file.read()
