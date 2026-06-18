@@ -25,6 +25,7 @@ print(f"Lines: {num_lines}")
 print(f"Words: {num_words}")
 print(f"Characters: {num_chars}")
 
+
 #5.	Write a Python program to copy the contents of one file to another file.
 shau = open('Shaurya.txt', 'r')
 shau1 = open('Shaurya1.txt', 'w')
