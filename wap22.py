@@ -14,6 +14,7 @@ shau = open('Shaurya.txt', 'a')
 shau.write('\nI am Python Developer')
 shau.close()
 
+
 #4.	Write a Python program to count the number of lines, words, and characters in a text file.
 with open("Shaurya.txt", "r") as file:
     content = file.read()
