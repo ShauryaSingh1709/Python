@@ -70,6 +70,7 @@ with open("Shaurya.txt", "w") as file:
     file.write(modified)
 print("Word replaced successfully.")
 
+
 #9.	Write a Python program to read a file line by line and store each line in a list.
 with open("Shaurya.txt", "r") as file:
     lines = file.readlines()
