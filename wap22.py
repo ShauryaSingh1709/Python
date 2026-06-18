@@ -56,6 +56,7 @@ print(f"Consonants: {consonants}")
 print(f"Digits: {digits}")
 print(f"Special characters: {special_chars}")
 
+
 #7.	Write a Python program to search for a specific word in a file and count its occurrences.
 with open("Shaurya.txt", "r") as file:
     content = file.read()
