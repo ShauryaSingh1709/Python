@@ -151,3 +151,12 @@ print(shau**4)
 print(shau << 2)
 res = shau.all and 11
 print(res)
+
+#Array with Inbuilt functions:-
+#1. max()
+#2. min()
+#3. sum()
+#4. abs()
+#5. mean()
+#6. std()
+#7. median()
