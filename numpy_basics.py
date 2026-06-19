@@ -125,3 +125,20 @@ print(b) #Output will be :- [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 b = np.zeros((2,3))
 print(b) #Output will be :- [[0. 0. 0.]
        #                  [0. 0. 0.]]
+       
+       
+#Array with Array Operations:-
+#Arithmetic Operations
+#Relational Operations
+#Logical Operations
+#Bitwise Operations
+#Membership Operations
+#Identity Operations
+
+#1. Arithmetic Operations:- 
+print(arr1 + arr2)
+print(arr1 - arr2)
+print(arr1 * arr2)
+print(arr1 / arr2)
+print(arr1 % arr2)
+print(arr1 ** arr2)
