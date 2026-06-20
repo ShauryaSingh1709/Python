@@ -104,3 +104,24 @@ Apple       2
 Strawberry  4
 Name: Weight in Kg, dtype: int64
 '''
+
+#Creating Series with Dictionary
+Protein = {
+    'Milk': 5,
+    'Mutton': 10,
+    'Chicken': 4,
+    'Fish':15,
+    'Egg':20
+}
+shauu = pd.Series(Protein)
+shauu.name = "Protein in Grams"
+print(shauu)
+#Output:-
+'''
+Milk       5
+Mutton    10
+Chicken     4
+Fish       15
+Egg        20
+Name: Protein in Grams, dtype: int64
+'''
