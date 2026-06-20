@@ -13,10 +13,12 @@
 import pandas as pd
 
 s = pd.Series([1,2,3,4,5])
+s.name = "Shaurya"
 print(s)
 print(s.dtype) #This will give output as int64 as data type for this series.
 print(s.values) #This will give output as [1 2 3 4 5] as values for this series.
 print(s.index) #This will give output as RangeIndex(start=0, stop=5, step=1) as index for this series.
+print(s.name)
 #Here dtype of s is int64
 
 
