@@ -72,6 +72,36 @@ Strawberry	  4
 Orange	      5
 dtype: int64
 '''
+
+#If we have to change the index then we have to change like this:-
+shaurya = pd.Series([1,2,3,4,5])
+shaurya.name = "Weight in Kg"
+fruit = ["Banana", "Apple", "Mango", "Strawberry", "Orange"]
+shaurya.index = fruit
+print(shaurya)
+#Output:-
+'''
+Banana      1
+Apple       2
+Mango       3
+Strawberry  4
+Orange      5
+Name: Weight in Kg, dtype: int64
+'''
+fruit = ["Banana", "Mango", "Apple", "Strawberry", "Orange"]
+shaurya.index = fruit
+shaurya
+#Here we have chnaged the index of shaurya
+#Output:- 
+'''
+Banana      1
+Mango       3   
+Apple       2
+Strawberry  4
+Orange      5
+Name: Weight in Kg, dtype: int64
+'''
+#This is how we changed the index of apple and mango.
 print(shaurya['Apple']) #This will give output as 2
 #iloc used for numerical indexing so we use loc func.
 
@@ -189,3 +219,4 @@ Name: Protein in Grams, dtype: int64
 #Modification of series:-
 shauu["Chicken"] = 6
 print(shauu)
+
