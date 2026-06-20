@@ -64,10 +64,10 @@ Name: Weight in Kg, dtype: int64
 # shaurya
 #Output:- 
 '''
-	Weight in Kg
-Banana	    1
-Apple	    2
-Mango	    3
-Strawberry	4
-Orange	    5
+	       Weight in Kg
+Banana	      1
+Apple	      2
+Mango	      3
+Strawberry	  4
+Orange	      5
 '''
