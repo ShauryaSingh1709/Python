@@ -9,3 +9,8 @@
 #Primary Data Structure:-
 #1. Series (1D)
 #2. DataFrame (2D)
+
+import pandas as pd
+
+s = pd.Series([1,2,3,4,5])
+print(s)
