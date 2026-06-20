@@ -41,3 +41,33 @@ print(shau.iloc[2]) #This will give output as 3
 
 #If we want different different values then:-
 print(shau.iloc[[0,2,4]]) #This will give output as [1 3 5]
+
+
+shaurya = pd.Series([1,2,3,4,5])
+shaurya.name = "Weight in Kg"
+fruit = ["Banana", "Apple", "Mango", "Strawberry", "Orange"]
+shaurya.index = fruit
+print(shaurya) #This will give output as 
+'''
+Banana      1
+Apple       2
+Mango       3
+Strawberry  4
+Orange      5
+Name: Weight in Kg, dtype: int64
+''' 
+#But if we using Google colab or jupyter notebook then we have to write like:-
+# shaurya = pd.Series([1,2,3,4,5])
+# shaurya.name = "Weight in Kg"
+# fruit = ["Banana", "Apple", "Mango", "Strawberry", "Orange"]
+# shaurya.index = fruit
+# shaurya
+#Output:- 
+'''
+	Weight in Kg
+Banana	    1
+Apple	    2
+Mango	    3
+Strawberry	4
+Orange	    5
+'''
