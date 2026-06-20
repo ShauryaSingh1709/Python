@@ -125,3 +125,16 @@ Fish       15
 Egg        20
 Name: Protein in Grams, dtype: int64
 '''
+
+#Conditional Selection:- 
+print(shauu>5)
+#Output:-
+'''
+Milk       False
+Mutton      True
+Chicken    False
+Fish        True
+Egg         True
+Name: Protein in Grams, dtype: bool
+'''
+#This will return any value which is greater than 5 as True else False.
