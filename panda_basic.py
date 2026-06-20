@@ -147,3 +147,45 @@ Fish      15
 Egg       20
 Name: Protein in Grams, dtype: int64
 '''
+
+#Logical Operators:-
+#1. And (&)
+#2. Or (or)
+#3. Not (not)
+
+#1. And (&)
+print(shauu[(shauu>5) & (shauu<16)])
+#Output:-
+'''
+Mutton    10
+Fish      15
+Name: Protein in Grams, dtype: int64
+'''
+#This will return any value which is greater than 5 and less than 16
+
+#2. Or (or)
+print(shauu[(shauu>5) | (shauu<16)])
+#Output:-
+'''
+Milk       5
+Mutton    10
+Chicken     4
+Fish      15
+Egg       20
+Name: Protein in Grams, dtype: int64
+'''
+#This will return any value which is greater than 5 or less than 16
+
+#3. Not (not)
+print(shauu[~(shauu>5)])
+#Output:-
+'''
+Milk       5
+Chicken     4
+Name: Protein in Grams, dtype: int64
+'''
+#This will return any value which is not greater than 5
+
+#Modification of series:-
+shauu["Chicken"] = 6
+print(shauu)
