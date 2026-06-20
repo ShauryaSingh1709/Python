@@ -33,4 +33,11 @@ print(shau[2]) #This will give output as 3
 
 #If we want multiple value then :-
 #Syntax:- start(included) : stop(excluded) : step
-print(shau[0:3:2]) #This will give output as [1 3] because it will include 1 and then go 2 steps and then give 3.
+print(shau[0:3:2]) #This will give output as [1 3] because it will include 1 and then go 2 steps and then give 3 while excluding last index value..
+
+#iloc :- Location based indexing
+print(shau.iloc[0]) #This will give output as 1
+print(shau.iloc[2]) #This will give output as 3
+
+#If we want different different values then:-
+print(shau.iloc[[0,2,4]]) #This will give output as [1 3 5]
