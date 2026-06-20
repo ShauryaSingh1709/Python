@@ -78,7 +78,16 @@ print(shaurya['Apple']) #This will give output as 2
 #loc :- Label based indexing
 print(shaurya.loc['Apple']) #This will give output as 2
 
-#In label based indexing we can acess multiple values but in this start and stop value both will include.
+#If we want multiple values then:-
+print(shaurya.loc[['Apple', 'Strawberry']])
+#Output:-
+'''
+Apple       2
+Strawberry  4
+Name: Weight in Kg, dtype: int64
+'''
+
+#In this type of indexing we can acess multiple values but in this start and stop value both will include.
 print(shaurya["Apple":"Strawberry"])
 #Output:-
 '''
