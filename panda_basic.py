@@ -14,6 +14,8 @@ import pandas as pd
 
 s = pd.Series([1,2,3,4,5])
 print(s)
+print(s.dtype) #This will give output as int64 as data type for this series.
+print(s.values) #This will give output as [1 2 3 4 5] as values for this series.
 #Here dtype of s is int64
 
 
