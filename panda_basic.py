@@ -87,4 +87,11 @@ Mango       3
 Strawberry  4
 Name: Weight in Kg, dtype: int64
 '''
-#we just have to give start to end value.
+#we just have to give start to end value and if we want then we can use step also.
+print(shaurya["Apple":"Strawberry":2])
+#Output:-
+'''
+Apple       2
+Strawberry  4
+Name: Weight in Kg, dtype: int64
+'''
