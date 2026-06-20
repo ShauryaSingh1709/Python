@@ -138,3 +138,12 @@ Egg         True
 Name: Protein in Grams, dtype: bool
 '''
 #This will return any value which is greater than 5 as True else False.
+#If we don't want True or False just want to get True values then we will do it like:-
+print(shauu[shauu>5])
+#Output:- 
+'''
+Mutton    10
+Fish      15
+Egg       20
+Name: Protein in Grams, dtype: int64
+'''
