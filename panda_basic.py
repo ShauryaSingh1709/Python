@@ -14,3 +14,9 @@ import pandas as pd
 
 s = pd.Series([1,2,3,4,5])
 print(s)
+#Here dtype of s is int64
+
+
+a = pd.Series([1,2,3,4,5,"shaurya"])
+print(a)
+#Here dtype of a is object
