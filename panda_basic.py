@@ -72,3 +72,8 @@ Strawberry	  4
 Orange	      5
 dtype: int64
 '''
+print(shaurya['Apple']) #This will give output as 2
+#iloc used for numerical indexing so we use loc func.
+
+#loc :- Label based indexing
+print(shaurya.loc['Apple']) #This will give output as 2
