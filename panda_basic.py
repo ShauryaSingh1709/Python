@@ -25,3 +25,12 @@ print(s.name)
 a = pd.Series([1,2,3,4,5,"shaurya"])
 print(a)
 #Here dtype of a is object
+
+#Indexing 
+shau = pd.Series([1,2,3,4,5])
+print(shau[1]) #This will give output as 2
+print(shau[2]) #This will give output as 3
+
+#If we want multiple value then :-
+#Syntax:- start(included) : stop(excluded) : step
+print(shau[0:3:2]) #This will give output as [1 3] because it will include 1 and then go 2 steps and then give 3.
