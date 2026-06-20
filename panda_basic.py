@@ -70,4 +70,5 @@ Apple	      2
 Mango	      3
 Strawberry	  4
 Orange	      5
+dtype: int64
 '''
