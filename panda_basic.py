@@ -486,3 +486,9 @@ print(meow2[meow2['survived'] == 1])
 
 [500 rows x 11 columns]
 '''
+#How to write condition :-
+#Syntax:- df[(df['condition']) & (var['condition'])] for and condition
+#df[(df['condition']) | (var['condition'])] for or condition
+
+#Check survived male:-
+print(meow2[(meow2['survived'] == 1) & (meow2['sex'] == 'male')])
