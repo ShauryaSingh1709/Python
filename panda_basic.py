@@ -257,3 +257,28 @@ sname	Rollno	marks	mock
 # meow = pd.DataFrame(a)
 # meow
 
+#How to access only column of a Dataframe:-
+print(meow["sname"])
+#output :- 
+'''
+0    Rahul
+1  Shaurya
+2    Aman
+Name: sname, dtype: object
+'''
+#How to add new column:-
+meow['Branch'] = ['AIDS', 'CYS', 'CSE']
+print(meow)
+#Output:-
+'''
+   sname  Rollno  marks mock Branch
+0  Rahul       1     10     a   AIDS
+1 Shaurya      2     20     b    CYS
+2   Aman       3     30     c    CSE
+'''
+#How to access any thing like we want to access AIDS:-
+print(meow["Branch"][0])
+#Output:-
+'''
+AIDS
+'''
