@@ -437,3 +437,52 @@ print(meow1[(meow1['mes']=='Janeiro') & (meow1['estado']=='Acre')])
 18  2016  Janeiro   Acre  12 Fires  1/1/2016
 19  2017  Janeiro   Acre   0 Fires  1/1/2017
 '''
+
+meow2 = pd.read_csv('./Datasets/titanic (1).csv', encoding = 'ISO-8859-1')
+print(meow2)
+
+#loc():- To access particular row and column:-
+print(meow2.loc[10:20, ['ticket','pclass','fare']])
+#Output:-
+'''
+     ticket  pclass      fare
+10  PC 17757       1  227.5250
+11  PC 17757       1  227.5250
+12  PC 17477       1   69.3000
+13     19877       1   78.8500
+14     27042       1   30.0000
+15  PC 17318       1   25.9250
+16  PC 17558       1  247.5208
+17  PC 17558       1  247.5208
+18     11813       1   76.2917
+19     13050       1   75.2417
+20     11751       1   52.5542
+'''
+#iloc:- we have to pass index here :-
+#Syntax:- df.iloc[start:end, start:end]
+#Example :- df.iloc[[row_nums], [col_nums]]
+#Get 1st index to 9th index row of name column:-
+print(meow2.iloc[1:10, 1])
+
+#Get 2nd to 22nd row of name,age,sibsb,ticket
+print(meow2.iloc[2:23, 1:5])
+
+#Get data for survived data
+print(meow2[meow2['survived'] == 1])
+#Output:-
+'''
+      pclass                                             name     sex      age  ...      fare    cabin embarked  survived
+0          1                    Allen, Miss. Elisabeth Walton  female  29.0000  ...  211.3375       B5        S         1
+1          1                   Allison, Master. Hudson Trevor    male   0.9167  ...  151.5500  C22 C26        S         1
+5          1                              Anderson, Mr. Harry    male  48.0000  ...   26.5500      E12        S         1
+6          1                Andrews, Miss. Kornelia Theodosia  female  63.0000  ...   77.9583       D7        S         1
+8          1    Appleton, Mrs. Edward Dale (Charlotte Lamson)  female  53.0000  ...   51.4792     C101        S         1
+...      ...                                              ...     ...      ...  ...       ...      ...      ...       ...
+1261       3                           Turkula, Mrs. (Hedwig)  female  63.0000  ...    9.5875      NaN        S         1
+1277       3                             Vartanian, Mr. David    male  22.0000  ...    7.2250      NaN        C         1
+1286       3  Whabee, Mrs. George Joseph (Shawneene Abi-Saab)  female  38.0000  ...    7.2292      NaN        C         1
+1290       3                 Wilkes, Mrs. James (Ellen Needs)  female  47.0000  ...    7.0000      NaN        S         1
+1300       3          Yasbeck, Mrs. Antoni (Selini Alexander)  female  15.0000  ...   14.4542      NaN        C         1
+
+[500 rows x 11 columns]
+'''
