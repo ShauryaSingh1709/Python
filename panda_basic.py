@@ -356,3 +356,36 @@ print(meow1['mes'].head(20))
 18   Janeiro
 19   Janeiro
 '''
+
+#info():- To access information about the dataset:-
+print(meow1.info())
+#Output:-
+'''
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 6454 entries, 0 to 6453
+Data columns (total 5 columns):
+ #   Column    Non-Null Count  Dtype 
+---  ------    --------------  ----- 
+ 0   ano       6454 non-null   int64 
+ 1   mes       6454 non-null   object
+ 2   estado    6454 non-null   object
+ 3   numero    6322 non-null   object
+ 4   encontro  6454 non-null   object
+dtypes: int64(1), object(4)
+memory usage: 252.2+ KB
+'''
+
+#describe():- To access Mathematical information of the dataset:-
+print(meow1.describe())
+#Output:-
+'''
+          ano
+count  6454.0
+mean   2014.0
+std       0.0
+min    2014.0
+25%    2014.0
+50%    2014.0
+75%    2014.0
+max    2014.0
+'''
