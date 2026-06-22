@@ -498,3 +498,24 @@ print(meow2[(meow2['survived'] == 1) & (meow2['sex'] == 'female')])
 
 #To get passengers details who are having siblings 1 and parent/children 1
 print(meow2[(meow2['sibsp'] == 1) & (meow2['parch'] == 1)])
+
+
+
+#We have done with data collection and manipulation now we will do Data Cleaning.
+#There are 12 steps to clean data:-
+#1. Renaming the column name.
+#2. Rearranging the columns.
+#3. Updating the values in the columns.
+#4. Removing the unwanted data from columns.
+#5. Changing the data type of the columns.
+#6. Changing the particular values in the columns.
+#7. Applying the inbuilt functions on the columns.
+#8. Handling the missing values:-
+#a. Dropping the NaN values.
+#b. Replacing the NaN values with average.
+#c. Using Forward and backward filling :- bfill() and ffill().
+#d. Droping the duplicates.
+#9. Removing the unwanted column from the dataframe.
+#10. Removing the unwanted rows from the dataframe.
+#11. Resting the index value.
+#12. Setting the column as index.
