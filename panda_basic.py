@@ -583,4 +583,5 @@ print(meow1['Month'])
 #Syntax:- df = df.drop_duplicates(inplace = True)
 
 #For dropping values :- df.dropna()
-#For filling values:- df.fillna(0)
+#For filling values:- df.fillna(0) or 
+#df[col_name] = df[col_name].fillna(0)
