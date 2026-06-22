@@ -220,3 +220,40 @@ Name: Protein in Grams, dtype: int64
 shauu["Chicken"] = 6
 print(shauu)
 
+#Dataframe:-
+#A dataframe is a 2D array of data, similar to a spreadsheet, with rows and columns.
+#Creating a Dataframe:-
+
+#Syntax:- var = pd.DataFrame(dict)
+
+import pandas as pd
+a = { 'sname': ['Rahul', 'Shaurya', 'Aman'],
+      'Rollno': [1,2,3],
+      'marks': [10,20,30],
+      'mock': ['a','b','c']}
+meow = pd.DataFrame(a)
+print(meow)
+#Output:- 
+'''
+   sname  Rollno  marks mock
+0  Rahul       1     10     a
+1 Shaurya      2     20     b
+2   Aman       3     30     c
+'''
+
+#Output in google colab or notebook :- 
+'''	
+sname	Rollno	marks	mock
+0	Rahul	1	10	      a
+1	Shaurya	2	20	      b
+2	Aman	3	30	      c    #With edit option of dataframe.
+''' 
+#And code for google colab or notebook is :-
+# import pandas as pd
+# a = { 'sname': ['Rahul', 'Shaurya', 'Aman'],
+#       'Rollno': [1,2,3],
+#       'marks': [10,20,30],
+#       'mock': ['a','b','c']}
+# meow = pd.DataFrame(a)
+# meow
+
