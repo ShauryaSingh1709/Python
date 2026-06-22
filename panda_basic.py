@@ -492,3 +492,9 @@ print(meow2[meow2['survived'] == 1])
 
 #Check survived male:-
 print(meow2[(meow2['survived'] == 1) & (meow2['sex'] == 'male')])
+
+#Check survived female:-
+print(meow2[(meow2['survived'] == 1) & (meow2['sex'] == 'female')])
+
+#To get passengers details who are having siblings 1 and parent/children 1
+print(meow2[(meow2['sibsp'] == 1) & (meow2['parch'] == 1)])
