@@ -565,3 +565,22 @@ meow1['Month'] = meow1['Month'].replace('Janeiro', 'JAN')
 print(meow1['Month'])
 
 #Handling the missing values:-
+#Droping the NaN values:-
+#syntax:- df = df.dropna()
+
+#Replacing the NaN values with zero or average:-
+#Syntax:- df = df.fillna(value)
+
+#Using forward or backward filling method:-
+#syntax:- df = df.ffill() or
+#Syntax:- df[col_name] = df[col_name].ffill()
+
+#using bfill:-
+#Syntax:- df.bfill()
+#syntax:- df[col_name] = df[col_name].bfill()
+
+#Dropping the duplicates:-
+#Syntax:- df = df.drop_duplicates(inplace = True)
+
+#For dropping values :- df.dropna()
+#For filling values:- df.fillna(0)
