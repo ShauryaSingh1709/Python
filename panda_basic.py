@@ -530,3 +530,38 @@ print(meow1.columns)
 meow1.rename(columns = {'ano':'Year', 'mes':'Month', 'estado':'State', 'numero':'no. of fires', 'encontro':'meeting date'}, inplace = True)
 print(meow1.columns)
 #This will give all columns after renaming
+print(meow1.head())
+#Output:-
+'''   Year    Month State no. of fires meeting date
+0  1998  Janeiro  Acre      0 Fires     1/1/1998
+1  1999  Janeiro  Acre      0 Fires     1/1/1999
+2  2000  Janeiro  Acre      0 Fires     1/1/2000
+3  2001  Janeiro  Acre      0 Fires     1/1/2001
+4  2002  Janeiro  Acre      0 Fires     1/1/2002
+'''
+
+#Rearranging the columns:-
+new_order = [2,1,0,4,3]
+print(meow1.columns[new_order])
+#Output:-
+'''
+Index(['State', 'Month', 'Year', 'meeting date', 'no. of fires'], dtype='object')
+'''
+
+#Updating the values in column:-
+#map():- for updating the value in the column
+print(meow1['Month'].unique())
+print(meow1['Month'].map({'Janeiro':'Jan', 'Fevereiro':'Feb', 'Março':'Mar', 'Abril':'Apr', 'Maio':'May', 'Junho':'June', 'Julho':'July', 'Agosto':'Aug', 'Setembro':'Sep', 'Outubro':'Oct', 'Novembro':'Nov', 'Dezembro':'Dec'}))
+#To remove unwanted data:-
+meow1['no. of fires'] = meow1['no. of fires'].str.strip(' Fires')
+print(meow1['no. of fires'])
+
+#For changing the data type:-
+meow1['no. of fires'] = meow1['no. of fires'].astype(float)
+print(meow1['no. of fires'].dtype)
+
+#Replacing the Column name:-
+meow1['Month'] = meow1['Month'].replace('Janeiro', 'JAN')
+print(meow1['Month'])
+
+#Handling the missing values:-
