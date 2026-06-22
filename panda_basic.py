@@ -317,3 +317,42 @@ print(Shaurya['Branch'][9])
 #Access Section of topper:-
 print(Shaurya['Section'][9])
 #Output:- #j
+
+#Using Amazon Dataset for learning:- 
+meow1 = pd.read_csv('./Datasets/amazon_fires.csv', encoding = 'ISO-8859-1')
+print(meow1)
+
+#head():- To access first 5 elements:-
+print(meow1.head())
+#If 
+print(meow1.head(10)) #Then it will give first then elements
+
+#tail():- To access last 5 elements:-
+print(meow1.tail())
+
+#If we want to access any column's with n number of elements then:-
+print(meow1['mes'].head(20))
+#This will give output as :-
+'''
+     mes
+0    Janeiro
+1    Janeiro
+2    Janeiro
+3    Janeiro
+4    Janeiro
+5    Janeiro
+6    Janeiro
+7    Janeiro
+8    Janeiro
+9    Janeiro
+10   Janeiro
+11   Janeiro
+12   Janeiro
+13   Janeiro
+14   Janeiro
+15   Janeiro
+16   Janeiro
+17   Janeiro
+18   Janeiro
+19   Janeiro
+'''
