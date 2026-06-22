@@ -517,5 +517,5 @@ print(meow2[(meow2['sibsp'] == 1) & (meow2['parch'] == 1)])
 #d. Droping the duplicates.
 #9. Removing the unwanted column from the dataframe.
 #10. Removing the unwanted rows from the dataframe.
-#11. Reseting the index value.
-#12. Setting the column as index.
+#11. Re-Seting the index value.
+#12. Re-Setting the column as index.
