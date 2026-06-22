@@ -532,7 +532,8 @@ print(meow1.columns)
 #This will give all columns after renaming
 print(meow1.head())
 #Output:-
-'''   Year    Month State no. of fires meeting date
+'''   
+    Year  Month State no. of fires meeting date
 0  1998  Janeiro  Acre      0 Fires     1/1/1998
 1  1999  Janeiro  Acre      0 Fires     1/1/1999
 2  2000  Janeiro  Acre      0 Fires     1/1/2000
