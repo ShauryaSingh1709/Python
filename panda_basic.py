@@ -519,3 +519,14 @@ print(meow2[(meow2['sibsp'] == 1) & (meow2['parch'] == 1)])
 #10. Removing the unwanted rows from the dataframe.
 #11. Re-Seting the index value.
 #12. Re-Setting the column as index.
+
+print(meow1.head())
+#Renaming the column name:-
+#syntax:- df.rename(columns = dict_var, inplace = True)
+
+print(meow1.columns)
+#This will give all columns
+
+meow1.rename(columns = {'ano':'Year', 'mes':'Month', 'estado':'State', 'numero':'no. of fires', 'encontro':'meeting date'}, inplace = True)
+print(meow1.columns)
+#This will give all columns after renaming
