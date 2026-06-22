@@ -389,3 +389,51 @@ min    2014.0
 75%    2014.0
 max    2014.0
 '''
+
+#To perform describe on particular column:-
+print(meow1['ano'].describe())
+#Output:-
+'''
+count    6454.0
+mean     2014.0
+std        0.0
+min    2014.0
+25%    2014.0
+50%    2014.0
+75%    2014.0
+max    2014.0
+Name: ano, dtype: float64
+'''
+
+#If we want to get information about any particular column then :-
+print(meow1['mes']=='Janeiro')
+#This will return only true false but if we want data then :-
+print(meow1[meow1['mes']=='Janeiro']) #This is known as boolean filteration.
+
+#Ques - Fetch the data of mes should be janeiro and estado should be Acre
+print(meow1[(meow1['mes']=='Janeiro') & (meow1['estado']=='Acre')])
+#Output:-
+'''
+[541 rows x 5 columns]
+     ano      mes estado    numero  encontro
+0   1998  Janeiro   Acre   0 Fires  1/1/1998
+1   1999  Janeiro   Acre   0 Fires  1/1/1999
+2   2000  Janeiro   Acre   0 Fires  1/1/2000
+3   2001  Janeiro   Acre   0 Fires  1/1/2001
+4   2002  Janeiro   Acre   0 Fires  1/1/2002
+5   2003  Janeiro   Acre  10 Fires  1/1/2003
+6   2004  Janeiro   Acre   0 Fires  1/1/2004
+7   2005  Janeiro   Acre  12 Fires  1/1/2005
+8   2006  Janeiro   Acre   4 Fires  1/1/2006
+9   2007  Janeiro   Acre   0 Fires  1/1/2007
+10  2008  Janeiro   Acre   0 Fires  1/1/2008
+11  2009  Janeiro   Acre   0 Fires  1/1/2009
+12  2010  Janeiro   Acre   1 Fires  1/1/2010
+13  2011  Janeiro   Acre   0 Fires  1/1/2011
+14  2012  Janeiro   Acre   0 Fires  1/1/2012
+15  2013  Janeiro   Acre   0 Fires  1/1/2013
+16  2014  Janeiro   Acre   0 Fires  1/1/2014
+17  2015  Janeiro   Acre   1 Fires  1/1/2015
+18  2016  Janeiro   Acre  12 Fires  1/1/2016
+19  2017  Janeiro   Acre   0 Fires  1/1/2017
+'''
