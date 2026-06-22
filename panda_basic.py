@@ -282,3 +282,38 @@ print(meow["Branch"][0])
 '''
 AIDS
 '''
+
+#Create a Dataset with 5 column and ten elements and access them:-
+dataset = { 'name': ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'],
+      'Rollno': [1,2,3,4,5,6,7,8,9,10],
+      'marks': [10,20,30,40,50,60,70,80,90,100],
+      'Section': ['a','b','c','d','e','f','g','h','i','j'],
+      'Branch': ['AIDS', 'CYS', 'CSE', 'AIDS', 'CYS', 'CSE', 'AIDS', 'CYS', 'CSE', 'AIDS']}
+Shaurya = pd.DataFrame(dataset)
+print(Shaurya)
+#Output :- 
+'''
+    name    Rollno       marks      Section        Branch
+0     A       1          10          a             AIDS
+1     B       2          20          b             CYS
+2     C       3          30          c             CSE
+3     D       4          40          d             AIDS
+4     E       5          50          e             CYS
+5     F       6          60          f             CSE
+6     G       7          70          g             AIDS
+7     H       8          80          h             CYS
+8     I       9          90          i             CSE
+9     J      10         100          j             AIDS
+'''
+#Access name of topper:-
+print(Shaurya['name'][9]) 
+#Output:- #J
+#Access marks of topper:-
+print(Shaurya['marks'][9])
+#Output:- #100
+#Access Branch of topper:-
+print(Shaurya['Branch'][9])
+#Output:- #AIDS
+#Access Section of topper:-
+print(Shaurya['Section'][9])
+#Output:- #j
