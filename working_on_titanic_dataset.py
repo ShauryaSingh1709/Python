@@ -21,3 +21,7 @@ print(shaurya[shaurya['sibsp'] > 0])
 
 #Write a query to find passengers who survived and paid more than median fare.
 print(shaurya[(shaurya['survived'] == 1) & (shaurya['fare'] > shaurya['fare'].median())])
+
+
+#write a query to retrieve passengers who were under tha age 18.
+print(shaurya[shaurya['age'] < 18])
