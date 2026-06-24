@@ -4,3 +4,7 @@ print(shaurya)
 
 #Write a query to retrieve all passengers who embarked from southampton (Embarked = 'S')
 print(shaurya[shaurya['embarked'] == 'S'])
+
+
+#Filter the dataset to find passengers who paid a fare between 20 and 40 units of currency.
+print(shaurya[(shaurya['fare'] >= 20) & (shaurya['fare'] <= 40)])
