@@ -25,3 +25,6 @@ print(shaurya[(shaurya['survived'] == 1) & (shaurya['fare'] > shaurya['fare'].me
 
 #write a query to retrieve passengers who were under tha age 18.
 print(shaurya[shaurya['age'] < 18])
+
+#Write a query to retrive only the passengers who were both female and survived.
+shaurya[(shaurya['survived'] == 1) & (shaurya['sex'] == 'female')]
