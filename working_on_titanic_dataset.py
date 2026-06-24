@@ -17,3 +17,7 @@ print(shaurya[shaurya['age'].isnull()])
 
 #Write a query to retrieve passengers who had siblings or spouses abroad the titanic.
 print(shaurya[shaurya['sibsp'] > 0])
+
+
+#Write a query to find passengers who survived and paid more than median fare.
+print(shaurya[(shaurya['survived'] == 1) & (shaurya['fare'] > shaurya['fare'].median())])
