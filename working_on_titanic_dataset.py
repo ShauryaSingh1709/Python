@@ -12,3 +12,8 @@ print(shaurya[(shaurya['fare'] >= 20) & (shaurya['fare'] <= 40)])
 
 #Filter the dataset to find passengers whose age is missing (Age = NaN)
 print(shaurya[shaurya['age'].isnull()])
+
+
+
+#Write a query to retrieve passengers who had siblings or spouses abroad the titanic.
+print(shaurya[shaurya['sibsp'] > 0])
