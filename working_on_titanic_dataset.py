@@ -28,3 +28,7 @@ print(shaurya[shaurya['age'] < 18])
 
 #Write a query to retrive only the passengers who were both female and survived.
 print(shaurya[(shaurya['survived'] == 1) & (shaurya['sex'] == 'female')])
+
+
+#Write a the dataset to retrive passengers who traveled in either first or second class.
+print(shaurya[(shaurya['pclass'] == 1) | (shaurya['pclass'] == 2)])
