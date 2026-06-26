@@ -30,9 +30,9 @@ print(shaurya[shaurya['age'] < 18])
 print(shaurya[(shaurya['survived'] == 1) & (shaurya['sex'] == 'female')])
 
 
-#Write a the dataset to retrive passengers who traveled in either first or second class.
+#Write a the dataset to retrive passengers who traveled in either first or secokond class.
 print(shaurya[(shaurya['pclass'] == 1) | (shaurya['pclass'] == 2)])
-
+s
 
 #Filter the dataset to find children(under 18) who survived the diaster.
 print(shaurya[(shaurya['age'] < 18) & (shaurya['survived'] == 1)])
